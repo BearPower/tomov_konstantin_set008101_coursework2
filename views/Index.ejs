@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/public/index.css" rel="stylesheet" type="text/css" />
+		<title>Mega Coll Blog</title>
+	</head>
+	<body>
+		<header>
+			<h1>Mega cool Blog</h1>
+		</header>
+		<div id="LogInBar">
+			<table>
+			<tr>
+			<p>Login and create in your own blog.</p>
+			<th><div>
+				<label>UserName: </label>
+				<input form="login" id="UserName" type="text" name="UserName">
+			</div></th>
+			<th><div">
+				<label>Password: </label>
+				<input form="login" id="Password" type="password" name="Password">
+			</div></th>
+			<th><div>
+				<form id="login" action="/LogIn" method="POST"><button>Log In</button></form>
+			</div></th>
+			<th><div>
+				<button onclick="location.href='/Register';">Register</button>
+			</div></th>
+			</tr>
+			</table>
+		</div>
+
+		<p>Browse Users posts or follow up on your favourite one.</p>
+			<% for(var i=0; i<users.length; i++){%>
+			
+			<form id="login" action="/Read" method="POST"><input type="hidden" name="UserBlog" value="<%=users[i].UserName%>"><li><button id="user" type="submit"><%=users[i].UserName%></button></li></form>
+			
+			<%}%>
+		
+		<footer>
+			Creator: Konstantin Tomov , Contact:KTomov@gmail.com
+		</footer>
+	</body>
+</html>

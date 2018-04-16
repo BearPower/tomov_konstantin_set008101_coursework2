@@ -1,0 +1,42 @@
+*{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+header{
+	height:85px;
+	background-color:#B22222;
+}
+h1{
+	padding-top:20px;
+	text-align:center;
+	font-size: 40px;
+}
+h2{
+	padding-top:20px;
+	text-align:center;
+}
+form{
+	text-align:center;
+}
+input{
+	width:60%;
+	border-radius:4px;
+	cursor: cursor;
+	padding: 6px 20px;
+	margin: 10px;
+}
+body{
+	background-image:url("/public/background.png");
+	background-size:cover;
+	background-repeat:no no-repeat;
+}
+footer{
+	background-color:black;
+	color:white;
+	width:100%;
+	padding:5px;
+}
+#registerBtn{
+	margin:0 auto;
+	display:block;
+}
+

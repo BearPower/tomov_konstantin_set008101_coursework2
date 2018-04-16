@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/public/register.js"></script>
+		<link href="/public/Register.css" rel="stylesheet" type="text/css" />
+		<title>Mega Coll Blog</title>
+	</head>
+	<body>
+		<header>
+			<h1>Mega cool Blog</h1>
+		</header>
+		<h2>Register</h2>
+		<form id="registerForm" action="/getNewUser" method="POST"> 
+			User name:<br> 
+			(Displayed to vewers and used to log in.)<br>
+			<input id="UserName" type="text" name="UserName"><br>
+			Firs name:<br>
+			(Confidential)<br>
+			<input id="FirstName" type="text" name="FirstName"><br>
+			Last name:<br>
+			(Confidential)<br>
+			<input id="LastName" type="text" name="LastName"><br>
+			E-mail address:<br>
+			(Confidential)<br>
+			<input id="Email" type="text" name="Email"><br>
+			Password:<br>
+			<input id="Password" type="password" name="Password"><br>
+			Confirm password:<br>
+			<input id="PasswordV" type="password" ><br>
+			  <br>
+		</form>
+			<button id="registerBtn" onclick="getInfo();">Register</button><br>
+		<footer>
+			Creator: Konstantin Tomov , Contact:KTomov@gmail.com
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/public/LogedIn.css" rel="stylesheet" type="text/css" />
+		<title>Mega Coll Blog</title>
+	</head>
+	<body>
+		<header>
+			<h1>Mega cool Blog</h1>
+		</header>
+		
+		<p>Welcome to " <%=User%> " personal blog.</p>
+		<p>Posts:</p>
+		
+				<% for(var i=0; i<Posts.length; i++){%>
+			<li><%var lines = Posts[i].Post.split('\n');
+				for (var k = 0;k < lines.length; k++){
+					%><%=lines[k]%><br/>
+				<%}%>
+				<br/><br/><br/>
+				</li>
+			<%}%>
+		
+		<footer>
+			Creator: Konstantin Tomov , Contact: KTomov@gmail.com
+		</footer>
+	</body>
+</html>
